@@ -46,83 +46,222 @@
         .ss-logo-shadow {
             filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
         }
+        .perspective {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Header Section -->
-    <header class="bg-white sticky top-0 z-50 shadow-sm">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-2">
-                <img src="https://www.ssinfotech.co/logo.png" alt="SS Infotech Logo" class="h-10 ss-logo-shadow">
-            </a>
-            <a href="#enroll" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Enroll Now</a>
-        </nav>
-    </header>
+  ``<header class="flex justify-between items-center px-6 py-2 shadow-md fixed top-0 w-full bg-white z-50">
+  <div class="flex items-center">
+    <img src="S2S.png "  
+         class="h-16 w-auto ss-logo-shadow object-contain" 
+         alt="Logo">
+  </div>
+  <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full shadow-lg transition">
+    Enroll Now
+  </button>
+</header>
+
 
     <main>
         <!-- Hero Section -->
-        <section class="relative bg-purple-700 text-white py-20 md:py-32 overflow-hidden">
-            <div class="container mx-auto px-4 text-center z-10 relative">
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-md">
-                    Become a <span class="text-white-300">Certified Data Analyst</span>
-                </h1>
-                <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto font-light">
-                    Unlock your career potential with our comprehensive, 3-month hands-on training program.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-sm p-4 rounded-lg shadow-lg">
-                        <span class="block text-2xl font-bold">₹18,000</span>
-                        <span class="text-sm font-light">Course Fee</span>
-                    </div>
-                    <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-sm p-4 rounded-lg shadow-lg">
-                        <span class="block text-2xl font-bold">3 Months</span>
-                        <span class="text-sm font-light">Duration</span>
-                    </div>
-                </div>
-                <a href="#enroll" class="mt-12 inline-block bg-white hover:bg-gray-200 text-purple-900 font-bold py-4 px-10 rounded-full text-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
-                    Start Your Journey Today
-                </a>
-            </div>
+       
+<section class="relative bg-purple-700 text-white py-20 md:py-32 overflow-hidden">
+  <div class="container mx-auto px-4 text-center relative z-10">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+      Become a Certified Data Analyst
+    </h1>
+    <p class="text-lg md:text-2xl mb-12 max-w-2xl mx-auto font-light">
+      Unlock your career potential with our <span class="font-semibold text-yellow-200">3-month hands-on training program.</span> 
+    </p>
+
+    <!-- Highlight Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto mb-12">
+      <div class="bg-white text-purple-900 rounded-2xl shadow-xl p-6 transform hover:scale-105 transition">
+        <div class="flex items-center justify-center mb-4">
+          <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3v3H6l6 6 6-6h-3v-3c0-1.657-1.343-3-3-3z"/>
+          </svg>
+        </div>
+        <h3 class="text-3xl font-bold text-purple-700">₹18,000</h3>
+        <p class="text-gray-600">Course Fee</p>
+      </div>
+
+      <div class="bg-white text-purple-900 rounded-2xl shadow-xl p-6 transform hover:scale-105 transition">
+        <div class="flex items-center justify-center mb-4">
+          <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-3xl font-bold text-purple-700">3 Months</h3>
+        <p class="text-gray-600">Duration</p>
+      </div>
+    </div>
+
+    <a href="#enroll" class="inline-block bg-yellow-300 hover:bg-yellow-400 text-purple-900 font-bold py-4 px-10 rounded-full text-lg shadow-lg transition-transform duration-300 transform hover:scale-110">
+      🚀 Start Your Journey Today
+    </a>
+  </div>
+
+  <!-- Purple overlay -->
+  <div class="absolute inset-0 bg-purple-800 opacity-50 z-0"></div>
+</section>
             <!-- Background pattern -->
-            <div class="absolute inset-0 bg-purple-800 opacity-50 z-0"></div>
-            <svg class="absolute bottom-0 left-0 w-full h-auto text-white z-0" viewBox="0 0 1440 320">
+            <!-- <div class="absolute inset-0 bg-purple-800 opacity-50 z-0"></div> -->
+            <!-- <svg class="absolute bottom-0 left-0 w-full h-auto text-white z-0" viewBox="0 0 1440 320">
                 <path fill="currentColor" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,106.7C672,85,768,107,864,138.7C960,171,1056,213,1152,229.3C1248,245,1344,235,1392,232L1440,229.3L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
+            </svg> -->
         </section>
 
         <!-- Course Highlights Section -->
-        <section class="py-20 bg-gray-100">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What You Will Master</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Highlight Card 1: Excel -->
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                        <div class="bg-green-100 text-green-500 p-3 rounded-full inline-block mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-4m0 0a2 2 0 11-4 0m4 0a2 2 0 10-4 0m0 0h4m-4 0v4m4-4h4m-4 0v4m4-4h4m0 0a2 2 0 11-4 0m4 0a2 2 0 10-4 0m0 0h4m-4 0v4"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Microsoft Excel</h3>
-                        <p class="text-gray-600">Master data cleansing, pivot tables, and advanced formulas for robust data analysis.</p>
-                    </div>
-                    <!-- Highlight Card 2: SQL -->
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                        <div class="bg-purple-100 text-purple-500 p-3 rounded-full inline-block mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">SQL & Databases</h3>
-                        <p class="text-gray-600">Extract, transform, and manage data from relational databases using powerful SQL queries.</p>
-                    </div>
-                    <!-- Highlight Card 3: Power BI -->
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                        <div class="bg-orange-100 text-orange-500 p-3 rounded-full inline-block mb-4">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 0 0120.488 9z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Power BI & Visualization</h3>
-                        <p class="text-gray-600">Create compelling dashboards and reports with industry-leading tools like Power BI.</p>
-                    </div>
-                </div>
+        <!-- Course Highlights Section -->
+<section class="py-20 ">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What You Will Master</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Excel -->
+      <div class="relative group perspective">
+        <div class="relative w-full h-72 transition-transform duration-700 transform-style preserve-3d group-hover:rotate-y-180 group-hover:scale-105 group-hover:shadow-2xl">
+          <!-- Front Side -->
+          <div class="absolute inset-0 bg-gradient-to-br from-green-100 via-green-200 to-green-50 p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center backface-hidden">
+            <div class="bg-white shadow-lg p-4 rounded-full mb-5 transform group-hover:scale-110 transition">
+              <svg class="w-14 h-14 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-4m0 0a2 2 0 11-4 0m4 0a2 2 0 10-4 0m0 0h4m-4 0v4m4-4h4m-4 0v4m4-4h4m0 0a2 2 0 11-4 0m4 0a2 2 0 10-4 0m0 0h4m-4 0v4"></path>
+              </svg>
             </div>
-        </section>
+            <h3 class="text-2xl font-bold mb-2 text-gray-800">Microsoft Excel</h3>
+            <p class="text-gray-600 text-center">Formulas, pivot tables, automation & more.</p>
+          </div>
+          <!-- Back Side -->
+          <!-- Excel -->
+            <!-- Excel -->
+<div class="relative group">
+  <div class="relative w-full h-72 bg-gradient-to-br from-green-100 via-green-200 to-green-50 p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center overflow-hidden">
+    <!-- Icon & Text -->
+    <div class="z-10 text-center transition-all duration-500 group-hover:opacity-0">
+      <div class="bg-white shadow-lg p-4 rounded-full mb-5 transform group-hover:scale-110 transition">
+        <svg class="w-14 h-14 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 17v-4m0 0a2 2 0 11-4 0m4 0a2 2 0 10-4 0m0 0h4m-4 0v4m4-4h4m-4 0v4m4-4h4m0 0a2 2 0 11-4 0m4 0a2 2 0 10-4 0m0 0h4m-4 0v4"></path>
+        </svg>
+      </div>
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">Microsoft Excel</h3>
+      <p class="text-gray-600">Formulas, pivot tables, automation & more.</p>
+    </div>
+
+    <!-- Image on hover -->
+    <div
+      class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+      <img src="excel_pin-removebg-preview.png" alt="Excel Dashboard"
+        class="w-full h-full object-contain rounded-xl border border-gray-200 shadow-lg">
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+
+      <!-- SQL -->
+      <div class="relative group perspective">
+        <div class="relative w-full h-72 transition-transform duration-700 transform-style preserve-3d group-hover:rotate-y-180 group-hover:scale-105 group-hover:shadow-2xl">
+          <!-- Front -->
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-100 via-purple-200 to-purple-50 p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center backface-hidden">
+            <div class="bg-white shadow-lg p-4 rounded-full mb-5 transform group-hover:scale-110 transition">
+              <svg class="w-14 h-14 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 text-gray-800">SQL & Databases</h3>
+            <p class="text-gray-600 text-center">Query and manage relational databases.</p>
+          </div>
+          <!-- Back -->
+<div class="relative group">
+  <div class="relative w-full h-72 bg-gradient-to-br from-purple-100 via-purple-200 to-purple-50 p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center overflow-hidden">
+    <!-- Icon & Text -->
+    <div class="z-10 text-center transition-all duration-500 group-hover:opacity-0">
+      <div class="bg-white shadow-lg p-4 rounded-full mb-5 transform group-hover:scale-110 transition">
+        <svg class="w-14 h-14 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">SQL & Databases</h3>
+      <p class="text-gray-600">Query and manage relational databases.</p>
+    </div>
+
+    <!-- Image on hover -->
+    <div
+      class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+      <img src="sql_-removebg-preview.png" alt="SQL Query Example"
+        class="w-full h-full object-contain rounded-xl border border-gray-200 shadow-lg">
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <!-- Power BI -->
+      <div class="relative group perspective">
+        <div class="relative w-full h-72 transition-transform duration-700 transform-style preserve-3d group-hover:rotate-y-180 group-hover:scale-105 group-hover:shadow-2xl">
+          <!-- Front -->
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-100 via-orange-200 to-orange-50 p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center backface-hidden">
+            <div class="bg-white shadow-lg p-4 rounded-full mb-5 transform group-hover:scale-110 transition">
+              <svg class="w-14 h-14 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9 0 0120.488 9z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 text-gray-800">Power BI</h3>
+            <p class="text-gray-600 text-center">Build interactive dashboards & reports.</p>
+          </div>
+          <!-- Back -->
+          <div class="relative group">
+  <div class="relative w-full h-72 bg-gradient-to-br from-orange-100 via-orange-200 to-orange-50 p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center overflow-hidden">
+    <!-- Icon & Text -->
+    <div class="z-10 text-center transition-all duration-500 group-hover:opacity-0">
+      <div class="bg-white shadow-lg p-4 rounded-full mb-5 transform group-hover:scale-110 transition">
+        <svg class="w-14 h-14 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+        </svg>
+      </div>
+      <h3 class="text-2xl font-bold mb-2 text-gray-800">Power BI</h3>
+      <p class="text-gray-600">Build interactive dashboards & reports.</p>
+    </div>
+
+    <!-- Image on hover -->
+    <div
+      class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+      <img src="pbii.png" alt="Power BI Dashboard"
+        class="w-full h-full object-contain rounded-xl border border-gray-200 shadow-lg">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
         <!-- Dashboard Gallery Section -->
         <section class="py-20 bg-gray-50">
@@ -329,3 +468,6 @@
 
 </body>
 </html>
+
+
+
